@@ -1,3 +1,29 @@
+#Litedoge
+ldoge:
+    enabled: true
+    unit: ldoge
+    name: Litedoge
+    symbol: 'ldoge'
+    config_file: '/root/.litedoge/litedoge.conf'
+    config_rpcserver: 127.0.0.1
+    minconf:
+        givetip: 10
+        withdraw: 144
+    txmin:
+        givetip: 0.00000001
+        withdraw: 0.05
+    txfee: 0.01
+    walletpassphrase: 'pass'
+    explorer:
+        address: 'http://www.presstab.pw/phpexplorer/LDOGE/address.php'
+        transaction: 'http://www.presstab.pw/phpexplorer/LDOGE/tx.php'
+    regex:
+        address: '(d[1-9a-z]{20,40})'
+        units: '(ldoge|ldogecoin|ldogecoins|ldg)'
+
+
+
+
 # Bitcoin
 btc:
     enabled: false
