@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For introduction to and use of ALTcointip bot, see __http://www.reddit.com/r/ALTcointip/wiki/index__
+For introduction to and use of LITEDOGE ALTcointip bot, see __http://www.reddit.com/r/ALTcointip/wiki/index__
 
 ## Getting Started
 
