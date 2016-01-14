@@ -45,26 +45,47 @@ Create a new MySQL database instance and run included SQL file [altcointip.sql](
 ###litedoged install from source
 
 `apt-get update`
+
 `apt-get install nano build-essential libssl-dev libdb++-dev libboost-all-dev libminiupnpc-dev git`
+
 `git clone https://bitbucket.org/ctgiant/litedoge.git`
+
 `cd litedoge/src`
+
 `apt-get update`
+
 `make -f makefile.unix`
+
 `apt-get update`
+
 `cp litedoged /bin`
+
 `litedoged` (will error but needed to create files)
+
 `cd ~`
+
 `cd .litedoge`
+
 `nano litedoge.conf`
+
 ###Add Lines
+
 `server=1`
+
 `enableaccounts=1`
+
 `allowip=127.0.0.1`
+
 `maxconnections=1024`
+
 `staking=0`
+
 `rpcport=18340`
+
 `rpcuser=litedogerpc`
+
 `rpcpassword=xxSECURExx34334xxMExxc8gR3P7Pfsds45DFD8VRLbQqTgD13`
+
 `daemon=1`
 
 ###Encrypt Wallet
