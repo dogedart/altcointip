@@ -1,12 +1,12 @@
-# Reddit ALTcointip bot
+# Reddit litedoge ALTcointip bot
 
 ## Introduction
 
-For introduction to and use of LITEDOGE ALTcointip bot, see __http://www.reddit.com/r/ALTcointip/wiki/index__
+For introduction to and use of litedoge ALTcointip bot, see __http://www.reddit.com/r/ALTcointip/wiki/index__
 
 ## Getting Started
 
->**NEW: See [altcointip-chef](https://github.com/vindimy/altcointip-chef) for Chef-automated installation and configuration of ALTcointip bot.**
+
 
 ### Python Dependencies
 
@@ -27,9 +27,8 @@ The following Python libraries are necessary to run ALTcointip bot:
 
 ### Database
   `sudo apt-get install mysql-server php5-mysql`
-  
-  `sudo mysql_install_db`
-  
+   Make sure to use a secure password when prompted, and remember it. Now we set up mysql:
+   `sudo mysql_install_db`
   `sudo mysql_secure_installation`
   
   You will be asked to enter the password you set for the MySQL root account. Next, it will ask you if you want to change that password. If you are happy with your current password, type “n” for “no” at the prompt.
@@ -38,7 +37,7 @@ The following Python libraries are necessary to run ALTcointip bot:
   For the rest of the questions, you should simply hit the “ENTER” key through each prompt to accept the default values. This will remove some sample users and databases, disable remote root logins, and load these new rules so that MySQL immediately respects the changes we have made.
   
   
-Create a new MySQL database instance and run included SQL file [altcointip.sql](altcointip.sql) to create necessary tables. Create a MySQL user and grant it all privileges on the database. If you don't like to deal with command-line MySQL, use `phpMyAdmin`.
+
 
 ### Coin Daemons
 
@@ -71,7 +70,6 @@ Create a new MySQL database instance and run included SQL file [altcointip.sql](
 ###Add Lines to litedoge.conf
 
 `server=1`
-
 `enableaccounts=1`
 
 `allowip=127.0.0.1`
@@ -116,7 +114,7 @@ It will take some time for the daemon to download the blockchain, after which yo
 `ln -s pifkoin/python altcointip/src/ctb/pifkoin`
 
 ###setup altcointip
-
+Create a new MySQL database instance and run included SQL file [altcointip.sql](altcointip.sql) to create necessary tables. Create a MySQL user and grant it all privileges on the database. If you don't like to deal with command-line MySQL, use `phpMyAdmin`.
 `cd ~/altcointip`
 
 `mysql -u root -p`
