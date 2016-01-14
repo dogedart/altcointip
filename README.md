@@ -68,7 +68,7 @@ Create a new MySQL database instance and run included SQL file [altcointip.sql](
 
 `nano litedoge.conf`
 
-###Add Lines
+###Add Lines to litedoge.conf
 
 `server=1`
 
@@ -94,57 +94,76 @@ litedoged encryptwallet passwordyouwant-REMEMBER-THIS
 It will take some time for the daemon to download the blockchain, after which you should verify that it's accepting commands (such as `litedoged getinfo` and `litedoged listaccounts`).
 
 ###clone altcointip
+
  `cd`
+ 
  `git clone http://github.com/dogedart/altcointip`
  
  ###install pifkoin
+ 
 `cd`
+
 `git clone https://github.com/dpifke/pifkoin`
+
 `cd pifkoin`
+
 `make`
+
 `sudo make install`
+
 `cd`
+
 `ln -s pifkoin/python altcointip/src/ctb/pifkoin`
 
 ###setup altcointip
+
 `cd ~/altcointip`
+
 `mysql -u root -p`
 
 You will be prompted for a password, enter the one you entered when we setup mysql:
+
    `CREATE DATABASE tipbot;`
+   
    `use tipbot;`
+   
    `source altcointip.sql;`
+   
    `exit`
    
    Now we have everything setup for the bot to run! Now it's time to customize the bot, so we have to enter the conf files.
+   
   `cd src`
+  
    `cp conf-sample conf -r`
+   
    `cd conf`
    
    First, let's edit the username and password the bot uses to communicate with the mysql server.
+   
    `nano db.yml`
    
    This will open up a text editor. You need to edit the third line and enter in your mysql password we've been using a few times in this tutorial between the quotation marks. When you're done, hit control+x and press y to save your changes. Now lets edit your reddit settings.
+   
    `nano reddit.yml`
    
    
    First change 'mybotuser' and 'mybotpass' to your bots username and password, respectively. Then, on line 16, change YOUR_NAME to your reddit account (not the bot's) so that users can contact you if they have any issues. On line 38, change 'mybotuser' to your bots username. Now close and save your file, and we will move on to our last configuration file.
+   
   `nano regex.yml`
    
    On line 9, change both instances of mybotuser to your bot's name. Your bot is now ready to run! Type:
+   
    `cd altcointip/src`
 Now, to run the bot type:
+
    `sh _start.sh`
    
 ### Reddit Account
 
 You should create a dedicated Reddit account for your bot. Initially, Reddit will ask for CAPTCHA input when bot posts a comment or message. To remove CAPTCHA requirement, the bot account needs to accumulate positive karma, Reddit Gold is also required.
 
-### Configuration
 
-Copy included set of configuration files [src/conf-sample/](src/conf-sample/) as `src/conf/` and edit `reddit.yml`, `db.yml`, `coins.yml`, and `regex.yml`, specifying necessary settings.
-
-Most configuration options are described inline in provided sample configuration files.
 
 ### Running the Bot
 
