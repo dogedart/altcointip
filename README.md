@@ -20,14 +20,18 @@ The following Python libraries are necessary to run ALTcointip bot:
 
 ### Install in Ubuntu / Debian
  `sudo apt-get install python-setuptools python-dev markdown python-pip python-all debhelper python-mysqldb`
+   
    `sudo pip install jinja2 praw sqlalchemy pyyaml stdeb`
 
-You can install `jinja2`, `praw`, `sqlalchemy`, and `yaml` using `pip` (Python Package Index tool) or a package manager in your OS. For `pifkoin`, you'll need to copy or symlink its "python" subdirectory to `src/ctb/pifkoin`.
+
 
 ### Database
   `sudo apt-get install mysql-server php5-mysql`
+  
   `sudo mysql_install_db`
+  
   `sudo mysql_secure_installation`
+  
   You will be asked to enter the password you set for the MySQL root account. Next, it will ask you if you want to change that password. If you are happy with your current password, type “n” for “no” at the prompt.
   
   
