@@ -27,8 +27,11 @@ The following Python libraries are necessary to run ALTcointip bot:
 
 ### Database
   `sudo apt-get install mysql-server php5-mysql`
+  
    Make sure to use a secure password when prompted, and remember it. Now we set up mysql:
+   
    `sudo mysql_install_db`
+   
   `sudo mysql_secure_installation`
   
   You will be asked to enter the password you set for the MySQL root account. Next, it will ask you if you want to change that password. If you are happy with your current password, type “n” for “no” at the prompt.
@@ -70,6 +73,7 @@ The following Python libraries are necessary to run ALTcointip bot:
 ###Add Lines to litedoge.conf
 
 `server=1`
+
 `enableaccounts=1`
 
 `allowip=127.0.0.1`
