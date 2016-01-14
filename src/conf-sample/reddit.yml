@@ -9,7 +9,7 @@ scan:
 
 help:
     enabled: true
-    url: 'http://www.reddit.com/r/mysubreddit/wiki/index'
+    url: 'http://www.reddit.com/r/litedoge/wiki/index'
 
 contact:
     enabled: true
@@ -41,8 +41,8 @@ banned_users:
 stats:
     enabled: false
     userflair: false
-    subreddit: 'mysubreddit'
+    subreddit: 'litedoge'
     page: 'stats'
-    url: 'http://www.reddit.com/r/mysubreddit/wiki/stats'
+    url: 'http://www.reddit.com/r/litedoge/wiki/stats'
     page_tips: 'tips'
-    url_tips: 'http://www.reddit.com/r/mysubreddit/wiki/tips'
+    url_tips: 'http://www.reddit.com/r/litedoge/wiki/tips'
